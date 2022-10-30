@@ -45,22 +45,13 @@ namespace WebApiEmpleados.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("CURP")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Departamento")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("EmpleadoId")
                         .HasColumnType("int");
 
-                    b.Property<string>("NPuesto")
+                    b.Property<string>("departamento")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("NSS")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Nombre")
+                    b.Property<string>("nombpuesto")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "6/Ut4pWLpd4zw1c7sh19qn+8kKmJH3yN6WbRsUWWtkU=",
+  "Hash": "e3/NpbXQzcIwW1KamdSUiPTv0lnR01Zk+BeecQsauqs=",
   "Source": "WebApiEmpleados",
   "BasePath": "_content/WebApiEmpleados",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApiEmpleados\\wwwroot",
+      "Source": "WebApiEmpleados",
+      "ContentRoot": "C:\\Users\\Aaron Ramirez\\source\\repos\\WebApiEmpleados\\WebApiEmpleados\\wwwroot\\",
+      "BasePath": "_content/WebApiEmpleados",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Aaron Ramirez\\source\\repos\\WebApiEmpleados\\WebApiEmpleados\\wwwroot\\Empleados.txt",
+      "SourceId": "WebApiEmpleados",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Aaron Ramirez\\source\\repos\\WebApiEmpleados\\WebApiEmpleados\\wwwroot\\",
+      "BasePath": "_content/WebApiEmpleados",
+      "RelativePath": "Empleados.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Empleados.txt"
+    }
+  ]
 }

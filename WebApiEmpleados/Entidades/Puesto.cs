@@ -4,15 +4,9 @@
     {
         public int Id { get; set; }
 
-        public string Nombre { get; set; }
+        public string departamento { get; set; }
 
-        public string Departamento { get; set; }
-
-        public string NPuesto { get; set; }
-
-        public int NSS { get; set; }
-
-        public string CURP { get; set; }
+        public string nombpuesto { get; set; }
 
         public int EmpleadoId { get; set; }
         public Empleado Empleado { get; set; }

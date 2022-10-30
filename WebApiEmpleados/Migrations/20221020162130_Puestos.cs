@@ -16,11 +16,8 @@ namespace WebApiEmpleados.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Departamento = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NPuesto = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NSS = table.Column<int>(type: "int", nullable: false),
-                    CURP = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    departamento = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    nombpuesto = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     EmpleadoId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

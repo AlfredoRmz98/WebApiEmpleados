@@ -5,7 +5,7 @@ using WebApiEmpleados.Entidades;
 namespace WebApiEmpleados.Controllers
 {
     [ApiController]
-    [Route("api/clases")]
+    [Route("puestos")]//ruta del controlador
 
     public class PuestosController : ControllerBase
     {
@@ -24,16 +24,16 @@ namespace WebApiEmpleados.Controllers
         {
             return await dbContext.Puestos.FirstOrDefaultAsync(x => x.Id == id);
         }
+        
         [HttpPost]
         public async Task<ActionResult> Post(Puesto puesto)
         {
             var existeEmpleado = await dbContext.Empleados.AnyAsync(x => x.Id == puesto.EmpleadoId);
 
-            if (!existeEmpleado)
+            if(!existeEmpleado)
             {
-                return BadRequest($"No existe el alumno con el id: {puesto.EmpleadoId}");
-            }
-
+                return BadRequest($"No existe el empleado con el id:  {puesto.EmpleadoId }");
+            }   
             dbContext.Add(puesto);
             await dbContext.SaveChangesAsync();
             return Ok();
